@@ -214,7 +214,6 @@ flex-wrap:wrap;
 gap:12px;
 }
 
-/* SKILL BOX WITH HOVER EFFECT */
 .skill{
 padding:8px 18px;
 border-radius:30px;
@@ -341,12 +340,60 @@ padding:25px;
 font-size:.8rem;
 color:var(--muted);
 }
+
+/* ============================= */
+/* ONLY MOBILE RESPONSIVE FIXES */
+/* (ADDED — NOTHING REMOVED)    */
+/* ============================= */
+
+@media (max-width: 992px){
+.about{
+grid-template-columns:1fr;
+}
+}
+
+@media (max-width: 600px){
+nav{
+flex-wrap:wrap;
+padding:14px 18px;
+row-gap:12px;
+}
+
+.nav-links{
+width:100%;
+justify-content:center;
+flex-wrap:wrap;
+gap:18px;
+}
+
+header{
+padding-top:140px;
+}
+
+header h1{
+font-size:2.1rem;
+}
+
+header p{
+font-size:.9rem;
+}
+
+.btn{
+padding:12px 32px;
+font-size:.9rem;
+}
+
+.about,
+.roles,
+.contact{
+padding:80px 18px;
+}
+}
 </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <nav>
 <div class="logo">Date<span>GamerYt</span></div>
 
@@ -365,13 +412,11 @@ color:var(--muted);
 </div>
 </nav>
 
-<!-- LOADER -->
 <div id="loader">
 <div class="loader-ring"></div>
 <div class="loader-text">Launching DateGamerYt Experience</div>
 </div>
 
-<!-- HERO -->
 <header id="hero">
 <div>
 <h1>We Are <span>Hiring</span></h1>
@@ -383,7 +428,6 @@ Apply Now
 </div>
 </header>
 
-<!-- ABOUT -->
 <section class="about" id="about">
 <div>
 <h2>About Me</h2>
@@ -409,7 +453,6 @@ Focused on building a powerful gaming & creator community.
 </div>
 </section>
 
-<!-- ROLES -->
 <section class="roles" id="roles">
 <h2>Open Positions</h2>
 <div class="role-grid">
@@ -424,7 +467,6 @@ Focused on building a powerful gaming & creator community.
 </div>
 </section>
 
-<!-- CONTACT -->
 <section class="contact" id="contact">
 <div class="contact-info">
 <p>For collaborations & serious discussions.</p>
@@ -471,4 +513,3 @@ localStorage.theme=light?"light":"dark";
 
 </body>
 </html>
-
